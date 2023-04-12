@@ -43,3 +43,21 @@ console.log(selectedColors);
 selectedColors[3] = 1;
 console.log(selectedColors);
 console.log(selectedColors.length);
+
+//functions
+function greet() {
+  console.log("Hello World");
+}
+greet();
+
+//to get input
+function greet(nameToGreet) {
+  console.log("Hello " + nameToGreet);
+}
+greet("john");
+greet("mahtab");
+
+function greet(nameToGreet, lastNameToGreet) {
+  console.log("Hello " + nameToGreet + " " + lastNameToGreet);
+}
+greet("forough", "esmaeili");
