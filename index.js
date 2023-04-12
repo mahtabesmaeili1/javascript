@@ -61,3 +61,17 @@ function greet(nameToGreet, lastNameToGreet) {
   console.log("Hello " + nameToGreet + " " + lastNameToGreet);
 }
 greet("forough", "esmaeili");
+
+//performing a task
+//calculating a value
+function square(number) {
+  return number * number;
+}
+let number = square(2);
+console.log(number);
+
+//other way to write it
+function square(numberr) {
+  return numberr * numberr;
+}
+console.log(square(6));
