@@ -17,4 +17,17 @@ let isApproved = false;
 let last = null;
 let selectedColor = null;
 selectedColor = "green";
-//primitives or value
+//primitives / value
+
+//reference type : object array functions
+let person = {
+  personsName: "Sina",
+  personsAge: 31,
+};
+console.log(person);
+//dot notation
+person.personsName = "John";
+console.log(person.personsName);
+//bracket notation
+person["personsName"] = "Mary";
+console.log(person.personsName);
