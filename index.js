@@ -31,3 +31,15 @@ console.log(person.personsName);
 //bracket notation
 person["personsName"] = "Mary";
 console.log(person.personsName);
+
+//array
+let selectedColors = ["red", "blue"];
+console.log(selectedColors);
+console.log(selectedColors[0]);
+//this way we add one item
+selectedColors[2] = "green";
+console.log(selectedColors);
+
+selectedColors[3] = 1;
+console.log(selectedColors);
+console.log(selectedColors.length);
