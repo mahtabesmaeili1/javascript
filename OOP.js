@@ -1,8 +1,7 @@
-console.log("hello world");
 //object
 //creating an object
 //object is a collection of key value pairs
-const circle = {
+const circlee = {
   radius: 1,
   location: {
     x: 1,
@@ -14,4 +13,17 @@ const circle = {
   },
 };
 //using dot notation to access
+circlee.draw();
+
+//factory function
+//if we want to write all the code up in down here with factory function , it will be like this :
+function createCircle(radius) {
+  return {
+    radius,
+    draw: function () {
+      console.log("draww");
+    },
+  };
+}
+const circle = createCircle(1);
 circle.draw();
