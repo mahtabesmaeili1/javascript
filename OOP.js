@@ -13,7 +13,7 @@ const circlee = {
   },
 };
 //using dot notation to access
-circlee.draw();
+// // // circlee.draw();
 
 //factory function
 //if we want to write all the code up in down here with factory function , it will be like this :
@@ -26,4 +26,16 @@ function createCircle(radius) {
   };
 }
 const circle = createCircle(1);
-circle.draw();
+// // // circle.draw();
+
+//if we use return so we r doing the factory function , if we use this and new  we r doing the constructor function
+
+// constructor function
+
+function Circle(radius) {
+  this.radius = radius;
+  this.draw = function () {
+    console.log("draaw");
+  };
+}
+const another = new Circle(1);
