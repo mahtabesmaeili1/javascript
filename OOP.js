@@ -25,17 +25,31 @@ function createCircle(radius) {
     },
   };
 }
-const circle = createCircle(1);
+// // // //const circle = createCircle(1);
 // // // circle.draw();
 
 //if we use return so we r doing the factory function , if we use this and new  we r doing the constructor function
 
 // constructor function
-
+//this circle down here is an object
 function Circle(radius) {
   this.radius = radius;
   this.draw = function () {
     console.log("draaw");
   };
 }
+const Circle1 = new Function(
+  "radius",
+  `
+this.radius = radius;
+this.draw = function () {
+  console.log("draaw");
+}
+`
+);
+// const circle = new Circle1(1);
+Circle.apply({}, [1, 2, 3]);
+
+Circle.call({}, 1);
+//this expression up is exactl the same as down one.
 const another = new Circle(1);
