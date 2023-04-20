@@ -21,5 +21,5 @@ const circle = {
 
 //spread operator
 // const another = { ...circle };
-const another = { ...circle, color: "pink" };
+const another = { ...circle, color: "pinkk" };
 console.log(another);
